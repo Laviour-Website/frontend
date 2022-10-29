@@ -1,0 +1,64 @@
+.react__slick__slider__home {
+  position: relative;
+}
+
+.react__slick__slider__home .slick-prev,
+.react__slick__slider__home .slick-next {
+  position: absolute;
+  top: 50%;
+}
+.react__slick__slider__home .slick-prev {
+  border-radius: 50%;
+  color: gray;
+  z-index: 1;
+  left: -3%;
+  height: 3rem;
+  width: 3rem;
+}
+.react__slick__slider__home .slick-next {
+  border-radius: 50%;
+  color: gray;
+  z-index: 1;
+  right: -4%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.slick-slide[aria-hidden="true"] {
+  visibility: hidden !important;
+}
+
+.slick-slide[aria-hidden="false"] {
+  transform: translateX(-45px);
+}
+
+.react__slick__slider__home .slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.react__slick__slider__home .slick-slide img {
+  width: 18rem;
+  height: 20rem;
+}
+
+.react__slick__slider__home .slick-slide {
+  width: 18rem;
+  height: 30rem;
+}
+.react__slick__slider__home .slick-next {
+  visibility: visible !important;
+}
+.react__slick__slider__home .slick-prev {
+  visibility: visible !important;
+}
+
+.slick-track {
+  margin-left: 3rem !important;
+  margin-top: 2rem !important;
+  margin-botton: 0px !important;
+}
+/*
+.slick-track::before {
+  display: none;
+}*/

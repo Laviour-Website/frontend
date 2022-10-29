@@ -1,0 +1,117 @@
+.slick-slide img {
+  width: 24rem;
+  height: 32rem;
+}
+
+.react__slick__slider__parent {
+  position: relative;
+}
+
+ul.slick-dots.slick-thumb {
+  position: absolute;
+  top: 21px;
+  left: -20px;
+  width: fit-content;
+  background-color: white;
+  margin-top: 10px;
+  display: flex !important;
+  flex-direction: column;
+}
+.slick-dots.slick-thumb li {
+  position: static;
+  width: 75px;
+  height: 100px;
+}
+
+.slick-dots.slick-thumb img {
+  width: 69px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.slick-arrow .slick-next {
+  display: none !important;
+}
+
+.slick-next {
+  visibility: hidden !important;
+}
+.slick-prev {
+  visibility: hidden !important;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  ul.slick-dots.slick-thumb {
+    position: static;
+    display: flex !important;
+    visibility: visible !important;
+    flex-direction: row;
+  }
+  .slick-dots.slick-thumb img {
+    width: 69px;
+    height: 92px;
+    object-fit: contain;
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  ul.slick-dots.slick-thumb {
+    position: static;
+    display: none !important;
+    flex-direction: row;
+    visibility: hidden !important;
+  }
+  .slick-list {
+    height: auto;
+  }
+
+  .slick-slide[aria-hidden="true"] {
+    visibility: hidden !important;
+  }
+  .slick-slide[aria-hidden="false"] {
+    transform: translateX(-45px);
+  }
+
+  .slick-dots.slick-thumb img {
+    margin: 0 auto;
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .slick-arrow .slick-next {
+    display: inline;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000;
+  }
+  .react__slick__slider__parent .slick-next {
+    border-radius: 50%;
+    color: gray;
+    z-index: 1;
+    right: -15%;
+    height: 3rem;
+    width: 3rem;
+  }
+  .react__slick__slider__parent .slick-prev {
+    border-radius: 50%;
+    color: gray;
+    z-index: 25;
+    left: -10%;
+
+    height: 3rem;
+    width: 3rem;
+  }
+  .react__slick__slider__parent .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+  .slick-next {
+    visibility: visible !important;
+  }
+  .slick-prev {
+    visibility: visible !important;
+  }
+}

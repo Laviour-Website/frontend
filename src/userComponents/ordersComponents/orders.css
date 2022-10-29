@@ -1,0 +1,17 @@
+.primaryBtn {
+  position:absolute;
+  right:0;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  transition: all 0.25s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -10px rgba(219,29,143,0.6);
+}
